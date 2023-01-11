@@ -37,12 +37,15 @@ export const App = () => {
   const countPositiveFeedbackPercentage = () =>
     Math.round((good / countTotalFeedback()) * 100) || 0;
 
-  const options = ['good', 'neutral', 'bad'];
+  const featuredOptions = ['good', 'neutral', 'bad'];
 
   return (
     <Layout>
       <Section title="Please leave feedback">
-        <FeedbackOptions options={options} onLeaveFeedback={handleFeedback} />
+        <FeedbackOptions
+          options={featuredOptions}
+          onLeaveFeedback={handleFeedback}
+        />
       </Section>
 
       <Section title="Statistics">
