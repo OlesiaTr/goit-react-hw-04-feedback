@@ -1,5 +1,5 @@
 // Core
-import { Component, useState } from 'react';
+import { useState } from 'react';
 
 // Styles
 import { Layout } from './Layout';
